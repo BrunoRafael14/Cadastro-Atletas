@@ -1,10 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask
+from blueprints.home import home_bp
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return render_template("home/home.html")
+app.register_blueprint(home_bp, url_prefix='/')
 
 if __name__ == "__main__":
     app.run(debug=True)
