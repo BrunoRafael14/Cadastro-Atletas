@@ -1,9 +1,9 @@
 from flask import Flask
-from blueprints.home import home_bp
+from blueprints.login import login_bp
 
 app = Flask(__name__)
 
-app.register_blueprint(home_bp, url_prefix='/')
+app.register_blueprint(login_bp, url_prefix='/')
 
 if __name__ == "__main__":
     app.run(debug=True)
