@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Atletas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cadastro_atleta/cadastro_atleta.css') }}">
+</head>
+<body>
+    <div class="page">
+        <h1>Cadastro de Atletas</h1>
+        <form id="cadastro" method="POST" action="/cadastro_atleta/">
+            <div class="form-group">
+                <div class="form-itens">
+                    <label for="nome_atleta">Nome Completo</label>
+                    <input type="text" id="nome_atleta" name="nome_atleta" required>
+                </div>
+                <div class="form-itens">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <div class="form-itens">
+                    <label for="posicao">Posição</label>
+                    <input type="text" id="posicao" name="posicao" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

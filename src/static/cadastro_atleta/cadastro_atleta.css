@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-itens {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    border: solid 1px black;
+    width: 400px;
+    padding: 10px;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+#botao-cadastrar {
+    margin-left: 4px;
+    border-radius: 7px;
+}
+
